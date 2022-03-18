@@ -1,0 +1,22 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+
+{{ blog.title }}
+
+<h2>--{{ blog.date|date:'F jS Y' }}--</h2>
+
+{{ blog.description|safe }}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum posuere pulvinar. Ut vulputate posuere felis sed ultrices. Aliquam auctor, tortor eget ullamcorper scelerisque, orci lorem venenatis nunc, et lacinia lectus nibh id odio. Donec id velit et leo venenatis ornare. Sed accumsan in urna aliquam molestie. Praesent nulla nisi, vestibulum vel nisl eget, facilisis faucibus diam. Nunc elit neque, ullamcorper consectetur orci sit amet, fermentum tincidunt ex. Nullam luctus, velit eu lacinia consectetur, massa urna bibendum elit, vitae aliquet sem libero id urna. Vivamus id enim dolor. Morbi molestie nibh non augue pulvinar semper in in diam. In eu tristique odio, ac eleifend augue. Aliquam erat volutpat. Ut id condimentum orci. Quisque a nisi id orci pharetra tempor. Duis porttitor viverra vehicula. Quisque turpis erat, luctus sed aliquam placerat, egestas in tortor.
+
+Fusce sit amet ultrices leo. Praesent vitae enim ultricies, tincidunt ipsum nec, commodo augue. In egestas dolor vel ligula posuere volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam accumsan mauris vel lectus condimentum tempus volutpat eget orci.
+
+Suspendisse potenti. Nulla quis magna a ipsum elementum dapibus vel a dui. Cras eu magna dui. Sed pulvinar dui et porttitor fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce sed feugiat nunc. Nulla eget nunc suscipit, suscipit augue ut, posuere mi. Mauris nisl dolor, rhoncus ut mauris eu, dictum viverra eros. Pellentesque tempor, tellus iaculis tincidunt maximus, nunc sapien auctor ligula, non imperdiet turpis sem sit amet diam. Cras eu volutpat nulla. Mauris nec maximus sem, id faucibus lectus. Donec nec consectetur magna.
+
+Etiam eu elementum erat. Integer vitae dignissim diam, quis blandit lorem. Morbi luctus erat eget tortor lacinia, eget efficitur velit auctor. In iaculis at quam nec commodo. Cras sagittis purus in commodo fermentum. Nam dui velit, vestibulum vel leo sed, ornare faucibus ligula. In consectetur, libero ultrices porta euismod, augue orci ullamcorper tellus, non commodo erat tellus sit amet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin finibus, metus sit amet imperdiet elementum, enim orci molestie enim, eu commodo turpis est dignissim erat. Pellentesque mi nisi, commodo eget lorem et, semper tempus eros. Praesent quis nisi vitae sapien mattis facilisis. Suspendisse imperdiet augue tortor, facilisis aliquet ligula consectetur non. Donec et consequat urna, vel viverra est. Nam luctus ex nisl, sed efficitur ipsum pulvinar quis. Nam ultricies mi at velit volutpat, id varius ligula elementum.
+
+Proin pretium venenatis dolor eu tempor. Fusce non nisi nunc. Praesent ultrices dui semper imperdiet hendrerit. Morbi gravida lacus eget vestibulum tempus. Aliquam at magna lacus. Proin turpis lectus, facilisis et pharetra at, venenatis id turpis. Aenean vehicula id nulla et tincidunt.
+
+{% endblock %}

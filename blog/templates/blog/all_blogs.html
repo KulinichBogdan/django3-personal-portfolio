@@ -1,0 +1,27 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1>My enumerous blogs</h1>
+
+<h3>Bohdan has written {{ blogs.count }} blog{{ blogs.count|pluralize }} so far</h3>
+
+<p>The final number of blogs is undefined and it's going as time goes on.</p>
+
+{% for blog in blogs %}
+<a href="{% url 'blog:detail' blog.id %}">
+<h2>{{ blog.title }}</h2>
+</a>
+<h5>{{ blog.date|date:'M d Y'|upper}}</h5>
+<p>{{ blog.description|striptags|truncatechars:100 }}</p>
+<img src="{{ blog.image.url }}">
+
+{% if blog.url %}
+<br><br>
+<a href="{{ blog.url  }}">Something New</a>
+{% endif %}
+
+{% endfor %}
+
+{% endblock %}
